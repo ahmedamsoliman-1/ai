@@ -10,11 +10,6 @@ from src import Model
 from src import Visualize
 
 
-# Elasticsearch connection settings
-HOST = "https://ai-es02-dev.avrioc.io:9200"
-USERNAME = "SVC-analytics"
-PASSWORD = "SVCAnalytics456#4"
-CA_BUNDLE_PATH = "/Users/ahmed.soliman/workspace/cs2/certs/avrioc.iobundle.crt"
 
 INDEX_NAME = "cs2_datapipeline_alpha_cs2_games"
 
