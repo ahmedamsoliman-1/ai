@@ -30,21 +30,21 @@ query = {
 data = data_fetcher.fetch_data(INDEX_NAME, query)
 
 stream_logger.stream_logger.warning(data)
-# Preprocess data
-preprocessor = DataPreprocessor(data)
-clean_data = preprocessor.preprocess()
-stream_logger.stream_logger.system(clean_data)
+# # Preprocess data
+# preprocessor = DataPreprocessor(data)
+# clean_data = preprocessor.preprocess()
+# stream_logger.stream_logger.system(clean_data)
 
-# Perform EDA
-eda = EDA(clean_data)
-eda.visualize_data()
+# # Perform EDA
+# eda = EDA(clean_data)
+# eda.visualize_data()
 
-# Train and evaluate model
-target_column = "target_column"  # Replace with your target column
-model = Model(clean_data, target_column)
-print(model.train_and_evaluate())
+# # Train and evaluate model
+# target_column = "target_column"  # Replace with your target column
+# model = Model(clean_data, target_column)
+# print(model.train_and_evaluate())
 
-# Visualize feature importance
-feature_importances = model.feature_importance()
-visualize = Visualize(feature_importances)
-visualize.plot_feature_importance()
+# # Visualize feature importance
+# feature_importances = model.feature_importance()
+# visualize = Visualize(feature_importances)
+# visualize.plot_feature_importance()
